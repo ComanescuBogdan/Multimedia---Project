@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor Foto</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 class="header_editor">Editor Foto</h1>
+    <div class="container">
+      <div class="container_left">
+        <label class="input_image"
+          ><input
+            type="file"
+            class="input_file"
+            name="inputFile"
+            accept="image/*"
+            multiple="fasle"
+          />Input Image / Drag and Drop</label
+        >
+        <button class="reset_photo hidden">Reset Photo</button>
+        <a class="link_descarcare" href="" download="imagine"
+          ><button class="button_descarcare hidden">Download Image</button></a
+        >
+      </div>
+
+      <div class="container_canvas">
+        <canvas class="canvas active"></canvas>
+      </div>
+
+      <div class="container_settings hidden">
+        <p>SELECTION SETTINGS</p>
+        <div class="containere_settings_selection">
+          <button class="btn_select_all btn">Select All</button>
+          <button class="btn_crop btn">Crop</button>
+          <button class="btn_delete_selection btn">Delete Selection</button>
+        </div>
+
+        <div class="containere_settings_efect">
+          <p>EFFECTS SETTINGS</p>
+          <button class="btn_grayscale btn">Grayscale</button>
+          <button class="btn_invert btn">Invert</button>
+        </div>
+
+        <div class="containere_settings_text">
+          <p>ADD TEXT SETTINGS</p>
+          <button class="btn_add_text btn">Add Text</button>
+          <div class="after_add_text">
+            <p>COLOR: <input class="color_text" type="color" /></p>
+            <p>
+              SIZE:
+              <input
+                class="size_text"
+                type="range"
+                min="10"
+                max="50"
+                value="10"
+              />
+            </p>
+            <p class="p_size">10px</p>
+            <p>TEXT: <input class="text" type="text" /></p>
+            <p>
+              POSITION: X
+              <input class="X_position" type="number" value="1" min="1" /> Y:
+              <input class="Y_position" type="number" value="1" min="1" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

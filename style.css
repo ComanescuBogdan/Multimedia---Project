@@ -1,0 +1,126 @@
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+.container_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header_editor {
+  text-align: center;
+  background-color: rgb(161, 81, 6);
+  /* align-self: flex-start; */
+}
+
+.input_file {
+  display: none;
+}
+
+.input_image {
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 0;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-self: stretch;
+  background-color: white;
+}
+
+.reset_photo {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 0;
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  height: 32px;
+}
+
+.button_descarcare {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-self: stretch;
+  height: 32px;
+  font-family: sans-serif;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.container_canvas {
+  display: flex;
+  align-items: flex-start;
+}
+.canvas {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0.5%;
+}
+
+.active {
+  border: 1px solid black;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.container_settings {
+  /* background-color: rgba(15, 71, 73, 0.733); */
+  width: fit-content;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+.container_settings_selection {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+
+.container_settings_efect {
+  background-color: blue;
+}
+
+.container_settings_text {
+  background-color: green;
+}
+
+.btn {
+  background-color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 32px;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  margin-bottom: 3px;
+}
